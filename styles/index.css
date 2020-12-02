@@ -1,0 +1,47 @@
+/*
+
+Auteur: Lars van Teeffelen
+Aanmaakdatum: 12/02/2020
+Laatst bewerkt: 12/02/2020
+
+Omschrijving: CSS bestand voor de homepagina.
+*/
+@keyframes startup {
+    0% {
+        
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+*
+{
+    margin: 0px;
+    padding: 0px;  
+}
+
+body
+{
+    animation: startup 2.5s;
+    background-color: rgb(100, 100, 200);
+    background-image: url("../images/eee.jpg");
+}
+#logo
+{
+    min-width: 100px;
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+#slogan
+{
+    width: 50%;
+    min-width: 300px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}

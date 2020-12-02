@@ -1,0 +1,26 @@
+/*
+
+Auteur: Lars van Teeffelen
+Aanmaakdatum: 12/02/2020
+Laatst bewerkt: 12/02/2020
+
+Omschrijving: CSS bestand voor de navigatiebar
+*/
+ul li 
+{
+    margin-top: 15px;
+    height: 40px;
+    list-style: none;
+    width: calc(100% / 6 );
+    min-width: 200px;
+    float: left;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+ul li a
+{
+    font-family: "Sintony";
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
