@@ -6,11 +6,11 @@ Laatst bewerkt: 12/02/2020
 
 Omschrijving: CSS bestand voor de navigatiebar
 */
-nav
+#regularMenu
 {
    position: sticky; 
 }
-nav ul li 
+#regularMenu ul li 
 {
     background-color: transparent;
     padding-top: 15px;
@@ -21,7 +21,7 @@ nav ul li
     text-align: center;
     
 }
-nav ul li a
+#regularMenu ul li a
 {
     padding: 5px;
     font-family: Arial;
@@ -30,23 +30,14 @@ nav ul li a
     text-decoration: none;
 }
 
-nav ul li a:hover
+#regularMenu ul li a:hover
 {
     border-bottom: 2px solid white;
 }
 
-    
-/* Opmaak voor het hamburger menu */
-#burger div
-{
-    width: 35px;
-    height: 5px;
-    margin: 5px;
-    background-color: white;
-
-}
 /* Standaard word het hamburgermenu niet weergegeven. */
-#burger, #burgerMenu 
+
+#burgerLogo, #burgerMenu 
 {
     cursor: pointer;
     display: none;
@@ -54,28 +45,50 @@ nav ul li a:hover
 
 /* Als het scherm  te klein word. (> 900px) dan word de navigatie weggehaald en een hamburgermenu neergezet. */
 @media screen and (max-width: 900px) {
-    ul li 
+    /* Normale menu laten verdwijnen */
+    #regularMenu
     {
         display: none;
     }
-    #burger 
+    /* Locatie hamburger menu knopje definieren. */
+    #burgerLogo 
     {
+        display: block;
         position: fixed;
         top: 20px;
         right: 30px;
-        display: block;
     }
+    /* Opmaak voor het hamburger menu knopje */
+    #burgerLogo div
+    {
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin: 5px;
+        background-color: white;
+    }
+    /* Styling voor het hamburgermenu */
     #burgerMenu
     {
+        background-color: azure;
         display: none;
-        background-color: gray;
-        width: 100%;
-        height: 100vh;
-        align-content: center;
-    
+        margin-top: 50px;
     }
-    #burgerMenu li
+    /* Styling knoppen in hamburgermenu */
+    #burgerMenu ul li 
+    {   
+        margin-top: 10px;
+        list-style: none;
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+    /* Styling text van knoppen in hamburgermenu */
+    #burgerMenu ul li a 
     {
-        width: 150px;
+        color: white;
+        font-family: Arial;
+        text-decoration: none;
     }
+
 }
