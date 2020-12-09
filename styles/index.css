@@ -15,17 +15,7 @@ Omschrijving: CSS bestand voor de homepagina.
         opacity: 1;
     }
 }
-*
-{
-    margin: 0px;
-    padding: 0px;  
-}
 
-body
-{
-    
-    background-color: rgb(100, 100, 200);
-}
 #logo
 {
     animation: startup 3.5s;

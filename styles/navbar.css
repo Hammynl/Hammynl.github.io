@@ -6,10 +6,41 @@ Laatst bewerkt: 12/02/2020
 
 Omschrijving: CSS bestand voor de navigatiebar
 */
+
+/* Vaste positie menu instellen */
+@keyframes startup {
+    0% {
+        
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+*
+{
+    margin: 0px;
+    padding: 0px; 
+}
+body, html
+{
+    background-color: rgb(100, 100, 200);
+}
+
 #regularMenu
 {
    position: sticky; 
+   display: block;
 }
+/* Styling menu */
 #regularMenu ul li 
 {
     background-color: transparent;
@@ -24,34 +55,28 @@ Omschrijving: CSS bestand voor de navigatiebar
 #regularMenu ul li a
 {
     padding: 5px;
-    font-family: Arial;
+    font-family: Poppins;
     font-size: 25px;
     color: white;
     text-decoration: none;
 }
-
+/* Styling hoveren over menuknoppen */
 #regularMenu ul li a:hover
 {
     border-bottom: 2px solid white;
 }
 
 /* Standaard word het hamburgermenu niet weergegeven. */
-
-#burgerLogo, #burgerMenu 
+#burgerLogo
 {
     cursor: pointer;
     display: none;
 }
+/* Als het scherm  te klein word. (> 950px) dan word de navigatie weggehaald en een hamburgermenu neergezet. */
+@media screen and (max-width: 1000px) {
 
-/* Als het scherm  te klein word. (> 900px) dan word de navigatie weggehaald en een hamburgermenu neergezet. */
-@media screen and (max-width: 900px) {
-    /* Normale menu laten verdwijnen */
-    #regularMenu
-    {
-        display: none;
-    }
     /* Locatie hamburger menu knopje definieren. */
-    #burgerLogo 
+    #burgerLogo
     {
         display: block;
         position: fixed;
@@ -67,28 +92,34 @@ Omschrijving: CSS bestand voor de navigatiebar
         margin: 5px;
         background-color: white;
     }
-    /* Styling voor het hamburgermenu */
-    #burgerMenu
+    #regularMenu
     {
-        background-color: azure;
-        display: none;
-        margin-top: 50px;
+        position: sticky;
+    }
+    #regularMenu ul 
+    {
+        animation: startup 1.5s;
+        padding: 50px 0px 0px 0px;
+        border-bottom: 2px solid white;
+        height: 120px;
+        background-color: rgb(100, 80, 200);
     }
     /* Styling knoppen in hamburgermenu */
-    #burgerMenu ul li 
+    #regularMenu ul li 
     {   
-        margin-top: 10px;
+        
+        padding: 0px;
         list-style: none;
         width: 50%;
         float: left;
         text-align: center;
     }
     /* Styling text van knoppen in hamburgermenu */
-    #burgerMenu ul li a 
+    #regularMenu ul li a 
     {
+        font-size: 20px;
         color: white;
-        font-family: Arial;
+        font-family: Poppins;
         text-decoration: none;
     }
-
 }
