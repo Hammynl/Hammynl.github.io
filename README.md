@@ -1,3 +1,3 @@
 # Hammynl.github.io
-This is a portfolio website made completely by me.
-This site has been made for school and for personal use.
+This is a responsive portfolio website written in HTML/CSS and JavaScript.
+This site has been made for a school project and for personal use.
