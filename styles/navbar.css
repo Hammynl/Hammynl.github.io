@@ -37,8 +37,10 @@ body, html
 
 #regularMenu
 {
-   position: sticky; 
-   display: block;
+    height: 60px;
+    position: sticky; 
+    display: block;
+    box-shadow: 0px 0px 15px;
 }
 /* Styling menu */
 #regularMenu ul li 
@@ -92,10 +94,13 @@ body, html
         margin: 5px;
         background-color: white;
     }
+    /* Hoogte van burgermenu gedefinieert. Zodat de content niet eronder staat. (50px margin. 120px hoogte list en 2px border van list) */
     #regularMenu
     {
+        height: 172px;
         position: sticky;
     }
+    /* Styling burgermenu met animatie en border */
     #regularMenu ul 
     {
         animation: startup 1.5s;
@@ -107,12 +112,10 @@ body, html
     /* Styling knoppen in hamburgermenu */
     #regularMenu ul li 
     {   
-        
         padding: 0px;
         list-style: none;
         width: 50%;
         float: left;
         text-align: center;
     }
-
 }

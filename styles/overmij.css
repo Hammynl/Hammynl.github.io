@@ -1,0 +1,25 @@
+/*
+
+Auteur: Lars van Teeffelen
+Aanmaakdatum: 12/02/2020
+Laatst bewerkt: 12/02/2020
+
+Omschrijving: CSS bestand voor de navigatiebar
+*/
+
+/* Vaste positie menu instellen */
+#vak1
+{
+    
+    background-color: gray;
+    left: 5%;
+    width: 35%;
+
+}
+#vak2
+{
+    background-color: gray;
+    right: 5%;
+    width: 35%;
+    height: 100px;
+}
