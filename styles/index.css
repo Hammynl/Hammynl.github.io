@@ -15,21 +15,11 @@ Omschrijving: CSS bestand voor de homepagina.
         opacity: 1;
     }
 }
-*
-{
-    margin: 0px;
-    padding: 0px;  
-}
 
-body
-{
-    animation: startup 2.5s;
-    background-color: rgb(100, 100, 200);
-    background-image: url("../images/eee.jpg");
-}
 #logo
 {
-    min-width: 100px;
+    animation: startup 3.5s;
+    min-width: 200px;
     width: 40%;
     position: absolute;
     top: 40%;
@@ -38,10 +28,27 @@ body
 }
 #slogan
 {
+    animation: startup 3.5s;
     width: 50%;
-    min-width: 300px;
+    min-width: 250px;
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -70%);
+}
+@media screen and (max-width: 600px) {
+    #logo
+    {
+        width: 75%;
+    }
+    #slogan
+    {
+        width: 90%;
+    }
+}
+@media screen and (max-height: 500px) {
+    #slogan
+    {
+        display: none;
+    }
 }
