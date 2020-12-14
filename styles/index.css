@@ -15,9 +15,13 @@ Omschrijving: CSS bestand voor de homepagina.
         opacity: 1;
     }
 }
-
+header
+{
+    height: 1000px;
+}
 #logo
 {
+    z-index: 0;
     animation: startup 3.5s;
     min-width: 200px;
     width: 40%;
@@ -36,6 +40,35 @@ Omschrijving: CSS bestand voor de homepagina.
     left: 50%;
     transform: translate(-50%, -70%);
 }
+#vak1
+{
+    position: relative;
+    left: 15%;
+    background-color: white;
+    width: 70%;
+    box-shadow: 0px 0px 15px;
+    height: 300px;
+    margin-bottom: 200px;
+}
+#vak1 h1
+{
+    position: relative;
+    left: 5%;
+    top: 10%;
+}
+#vak1 p
+{
+    position: relative;
+    left: 5%;
+    top: 15%;
+    width: 40%;
+}
+@media screen and (max-width: 900px) {
+    article
+    {
+        width: 80%;
+    }
+}
 @media screen and (max-width: 600px) {
     #logo
     {
@@ -43,6 +76,11 @@ Omschrijving: CSS bestand voor de homepagina.
     }
     #slogan
     {
+        width: 90%;
+    }
+    article
+    {
+        
         width: 90%;
     }
 }

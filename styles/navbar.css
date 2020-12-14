@@ -25,39 +25,60 @@ Omschrijving: CSS bestand voor de navigatiebar
     font-family: Poppins;
     src: url("../fonts/Poppins-Regular.ttf");
 }
+<<<<<<< Updated upstream
 body, html, ul
 {
     margin: 0px;
     padding: 0px; 
     background-color: rgb(100, 100, 200);
-}
-
-#regularMenu
+=======
+body
 {
+    background-color: #489EF5;
+}
+body, html, ul
+{
+    font-family: Poppins;
+    margin: 0px;
+    padding: 0px; 
+    
+>>>>>>> Stashed changes
+}
+/* Styling menu */
+#regularMenu ul
+{
+<<<<<<< Updated upstream
+=======
+    z-index: 10;
+>>>>>>> Stashed changes
     width: 100%;
     height: 60px;
-    position: sticky; 
+    position: fixed; 
     display: block;
     box-shadow: 0px 0px 15px;
+    background-color: #73CCFF;
 }
+<<<<<<< Updated upstream
 #regularMenu ul 
 {
     background-color: rgb(100, 80, 200);
 }
 /* Styling menu */
+=======
+/* Styling menu items */
+>>>>>>> Stashed changes
 #regularMenu ul li 
 {
     padding-top: 15px;
     height: 40px;
     list-style: none;
-    width: calc(100% / 6 );
+    width: calc(100% / 5);
     float: left;
     text-align: center;
-    
+
 }
 #regularMenu ul li a
 {
-    padding: 5px;
     font-family: Poppins;
     font-size: 20px;
     color: white;
@@ -72,11 +93,17 @@ body, html, ul
 /* Standaard word het hamburgermenu niet weergegeven. */
 #burgerLogo
 {
+    z-index: 11;
     cursor: pointer;
     display: none;
     position: fixed;
+<<<<<<< Updated upstream
     top: 20px;
     right: 30px;
+=======
+    top: 10px;
+    right: 20px;
+>>>>>>> Stashed changes
 }
 /* Opmaak voor het hamburger menu knopje */
 #burgerLogo div
@@ -87,22 +114,50 @@ body, html, ul
     margin: 5px;
     background-color: white;
 }
+<<<<<<< Updated upstream
 /* Als het scherm  te klein word. (> 900px) dan word de navigatie weggehaald en een hamburgermenu neergezet. */
 @media screen and (max-width: 900px) {
+=======
+>>>>>>> Stashed changes
 
-    /* Locatie hamburger menu knopje definieren. */
+/* Styling voor als het menu boven de 900px zit */
+@media screen and (max-width: 900px) {
+    /* Burgerlogo komt tevoorschijn */
     #burgerLogo
     {
         display: block;
+<<<<<<< Updated upstream
+=======
     }
-    /* Hoogte van burgermenu gedefinieert. Zodat de content niet eronder staat. (50px margin. 120px hoogte list en 2px border van list) */
-    #regularMenu
-    {
-        height: 172px;
-    }
-    /* Styling burgermenu met animatie en border */
+    /* Height van de ul word aangepast naar 120 omdat er max 
+    3 menuitems onder elkaar zitten (40px per item *3 = 120px) */
     #regularMenu ul 
     {
+        animation: startup 1.5s;
+        height: 120px;
+        padding-top: 50px;
+>>>>>>> Stashed changes
+    }
+    /* Padding word weggehaald om het menu compacter te maken en breedte wordt
+    50% om het goed te laten zien voor landschapmodus*/
+    #regularMenu ul li
+    {
+<<<<<<< Updated upstream
+        height: 172px;
+=======
+        padding-top: 0px;
+        width: 50%;
+>>>>>>> Stashed changes
+    }
+}
+
+/* Styling voor als het menu onder de 600px zit  */
+@media screen and (max-width: 600px) {
+    /* Omdat alle 5 de items onder elkaar staan (40px per item *5 = 200px)
+    word de hoogte naar 200px verandert voor de kleuroverbrenging*/
+    #regularMenu ul 
+    {
+<<<<<<< Updated upstream
         animation: startup 1.5s;
         padding: 50px 0px 0px 0px;
         border-bottom: 2px solid white;
@@ -114,5 +169,14 @@ body, html, ul
         padding: 0px;
         width: 50%;
         float: left;
+=======
+        height: 200px;
+    }
+    /* Breedte wordt naar 100% gezet zodat de items onder elkaar komen te staan
+    voor het smalle scherm */
+    #regularMenu ul li
+    {
+        width: 100%;
+>>>>>>> Stashed changes
     }
 }
