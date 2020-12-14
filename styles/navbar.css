@@ -25,13 +25,6 @@ Omschrijving: CSS bestand voor de navigatiebar
     font-family: Poppins;
     src: url("../fonts/Poppins-Regular.ttf");
 }
-<<<<<<< Updated upstream
-body, html, ul
-{
-    margin: 0px;
-    padding: 0px; 
-    background-color: rgb(100, 100, 200);
-=======
 body
 {
     background-color: #489EF5;
@@ -42,15 +35,11 @@ body, html, ul
     margin: 0px;
     padding: 0px; 
     
->>>>>>> Stashed changes
 }
 /* Styling menu */
 #regularMenu ul
 {
-<<<<<<< Updated upstream
-=======
     z-index: 10;
->>>>>>> Stashed changes
     width: 100%;
     height: 60px;
     position: fixed; 
@@ -58,15 +47,7 @@ body, html, ul
     box-shadow: 0px 0px 15px;
     background-color: #73CCFF;
 }
-<<<<<<< Updated upstream
-#regularMenu ul 
-{
-    background-color: rgb(100, 80, 200);
-}
-/* Styling menu */
-=======
 /* Styling menu items */
->>>>>>> Stashed changes
 #regularMenu ul li 
 {
     padding-top: 15px;
@@ -97,13 +78,8 @@ body, html, ul
     cursor: pointer;
     display: none;
     position: fixed;
-<<<<<<< Updated upstream
-    top: 20px;
-    right: 30px;
-=======
     top: 10px;
     right: 20px;
->>>>>>> Stashed changes
 }
 /* Opmaak voor het hamburger menu knopje */
 #burgerLogo div
@@ -114,11 +90,6 @@ body, html, ul
     margin: 5px;
     background-color: white;
 }
-<<<<<<< Updated upstream
-/* Als het scherm  te klein word. (> 900px) dan word de navigatie weggehaald en een hamburgermenu neergezet. */
-@media screen and (max-width: 900px) {
-=======
->>>>>>> Stashed changes
 
 /* Styling voor als het menu boven de 900px zit */
 @media screen and (max-width: 900px) {
@@ -126,8 +97,6 @@ body, html, ul
     #burgerLogo
     {
         display: block;
-<<<<<<< Updated upstream
-=======
     }
     /* Height van de ul word aangepast naar 120 omdat er max 
     3 menuitems onder elkaar zitten (40px per item *3 = 120px) */
@@ -136,18 +105,13 @@ body, html, ul
         animation: startup 1.5s;
         height: 120px;
         padding-top: 50px;
->>>>>>> Stashed changes
     }
     /* Padding word weggehaald om het menu compacter te maken en breedte wordt
     50% om het goed te laten zien voor landschapmodus*/
     #regularMenu ul li
     {
-<<<<<<< Updated upstream
-        height: 172px;
-=======
         padding-top: 0px;
         width: 50%;
->>>>>>> Stashed changes
     }
 }
 
@@ -157,19 +121,6 @@ body, html, ul
     word de hoogte naar 200px verandert voor de kleuroverbrenging*/
     #regularMenu ul 
     {
-<<<<<<< Updated upstream
-        animation: startup 1.5s;
-        padding: 50px 0px 0px 0px;
-        border-bottom: 2px solid white;
-        height: 120px;
-    }
-    /* Styling knoppen in hamburgermenu */
-    #regularMenu ul li 
-    {   
-        padding: 0px;
-        width: 50%;
-        float: left;
-=======
         height: 200px;
     }
     /* Breedte wordt naar 100% gezet zodat de items onder elkaar komen te staan
@@ -177,6 +128,5 @@ body, html, ul
     #regularMenu ul li
     {
         width: 100%;
->>>>>>> Stashed changes
     }
 }
