@@ -5,8 +5,6 @@ Aanmaakdatum: 11-25-2020
 Omschrijving: JavaScript bestand test
 */
 
-
-
 function openBurgerMenu() {
     if(document.getElementById("regularMenu").style.display == "none") 
     {
