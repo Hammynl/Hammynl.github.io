@@ -86,8 +86,8 @@ header
     /* Styling vakkenn */
     #vak1 
     {
-        
-        width: 100%;
+        padding: 30px;
+        width: 90%;
         height: auto;
     }
     #vak1 h1, #vak1 p 
