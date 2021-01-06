@@ -16,6 +16,10 @@ Omschrijving: CSS bestand voor de homepagina.
         opacity: 1;
     }
 }
+body
+{
+    font-size: 24px;
+}
 header
 {
     height: 1000px;
@@ -41,39 +45,60 @@ header
     left: 50%;
     transform: translate(-50%, -70%);
 }
+
+
+
+/* 
+    Styling voor het grote vak in het midden
+*/
 #vak1
 {
+    padding: 50px;
     position: relative;
-    left: 15%;
+    margin: 0 auto;
     background-color: white;
     width: 70%;
     box-shadow: 0px 0px 15px;
-    height: 700px;
+    height: auto;
     margin-bottom: 200px;
 }
 #vak1 h1
 {
-    position: relative;
-    left: 5%;
-    top: 10%;
-    width: 40%;
+    font-size: 1.5em;
+    width: 60%;
 }
 #vak1 p
 {
-    position: relative;
-    left: 5%;
-    top: 15%;
-    width: 40%;
+    font-size: 0.6em;
+    width: 60%;
 }
 #vak1 img
 {
     position: absolute;
-    right: 10%;
-    top: 10%;
-    width: 30%;
+    top: 15%;
+    right: 3%;
+    height: 400px;
+    width: 300px;
     box-shadow: 0px 0px 10px;
 }
+
 @media screen and (max-width: 900px) {
+    /* Styling vakkenn */
+    #vak1 
+    {
+        padding: 30px;
+        width: 80%;
+        height: auto;
+    }
+    #vak1 h1, #vak1 p 
+    {
+        width: 100%;
+    }
+    #vak1 img 
+    {
+        position: relative;
+        margin-left: 20px;
+    }
     #logo
     {
         width: 75%;
@@ -82,26 +107,11 @@ header
     {
         width: 90%;
     }
-    #vak1
-    {
-        height: 180vh;
-    }
-    #vak1 img 
-    {
-        position: relative;
-        top: 25%;
-        left: 10%;
-        width: 80%;
-    }
 }
 @media screen and (max-width: 600px) {
 
-    article
-    {
-        
-        width: 90%;
-    }
 }
+
 @media screen and (max-height: 500px) {
     #slogan
     {

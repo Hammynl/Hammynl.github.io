@@ -28,8 +28,9 @@ Omschrijving: CSS bestand voor de navigatiebar
 body
 {
     background-color: #489EF5;
+    font-size: 24px;
 }
-body, html, ul
+body, html, ul, h1
 {
     font-family: Poppins;
     margin: 0px;
@@ -80,6 +81,8 @@ body, html, ul
     position: fixed;
     top: 10px;
     left: 20px;
+    animation: startup 0.5s linear;
+    transition: 0.5s;
 }
 /* Opmaak voor het hamburger menu knopje */
 #burgerLogo div
@@ -98,10 +101,15 @@ body, html, ul
     {
         display: block;
     }
+    #regularMenu 
+    {
+        display: none;
+    }
     /* Height van de ul word aangepast naar 120 omdat er max 
     3 menuitems onder elkaar zitten (40px per item *3 = 120px) */
     #regularMenu ul 
     {
+        
         animation: startup 1.5s;
         height: 120px;
         padding-top: 50px;

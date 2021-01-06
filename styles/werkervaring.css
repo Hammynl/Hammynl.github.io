@@ -1,0 +1,55 @@
+#vak1
+{
+    position: relative;
+    left: 15%;
+    background-color: white;
+    width: 70%;
+    box-shadow: 0px 0px 15px;
+    height: 600px;
+    margin-bottom: 200px;
+}
+#vak1 h1
+{
+    position: relative;
+    left: 5%;
+    top: 10%;
+    width: 40%;
+}
+#vak1 p
+{
+    position: relative;
+    left: 5%;
+    top: 15%;
+    width: 40%;
+}
+#vak1 img
+{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    width: 30%;
+    box-shadow: 0px 0px 10px;
+}
+@media screen and (max-width: 900px) {
+    #vak1 {
+        left: 5%;
+        width: 90%;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #vak1 {
+        left: 5%;
+        width: 90%;
+    }
+    #vak1 h1 {
+        width: 90%;
+        font-size: 40px;
+    }
+    #vak1 p {
+        width: 90%;
+    }
+    #vak1 img {
+        display: none;
+    }
+}
