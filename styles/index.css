@@ -82,7 +82,7 @@ header
     box-shadow: 0px 0px 10px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 900px) and (orientation: portrait) {
     /* Styling vakkenn */
     #vak1 
     {
