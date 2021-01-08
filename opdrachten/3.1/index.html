@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- 
+    Auteur:         Lars van Teeffelen     
+    Aanmaakdatum:  11-12-2020     
+    
+    Oefening van Realiseren
+-->
+
+<html>
+    <head>
+        <!-- Opgeven van een title -->
+        <title>
+            Template
+        </title>
+        <!-- Tekenset declareren -->
+        <meta charset="utf-8">
+        <!-- Viewport declareren -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS Stylesheet gelinkt -->
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body>
+        <h1>Super aanbieding!</h1>
+        <picture>
+            <!-- WARNING: Doe je schermgrootte niet onder 400px ;) -->
+            <source media="(max-width:400px)" srcset="images/neusaap.jpg">
+            <source media="(max-width:600px)" srcset="images/cellphone.png">
+            <source media="(max-width:900px)" srcset="images/tablet.png">
+                
+            <img src="images/laptop.png">
+            <figcaption></figcaption>
+
+        </picture>
+    </body>
+</html>

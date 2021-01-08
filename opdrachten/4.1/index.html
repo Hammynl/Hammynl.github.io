@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- 
+    Auteur:         Lars van Teeffelen     
+    Aanmaakdatum:  12-16-2020     
+    
+    Oefening van Realiseren
+-->
+
+<html>
+
+<head>
+    <!-- Opgeven van een title -->
+    <title>
+        Festival
+    </title>
+    <!-- Tekenset declareren -->
+    <meta charset="utf-8">
+    <!-- Viewport declareren -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Stylesheet gelinkt -->
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4" id="programma">
+                    <h1>Festival Programma</h1>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="4" id="dag">
+                    <h2>Zaterdag</h2>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Tabelheaders met <th> elementen-->
+            <tr id="table-headers">
+                <th>
+                    Begin - Eind
+                </th>
+                <th>
+                    Artiest
+                </th>
+                <th>
+                    Genre
+                </th>
+                <th>
+                    Stage
+                </th>
+            </tr>
+            <!-- Eerste tijden zonder optreden opgegeven. Met grote cel ivm geen optreden-->
+            <tr>
+                <th>
+                   12:00 - 13:00
+                </th>
+
+                <td colspan="3" rowspan="2" id="geen-optreden">
+                    Geen Optreden
+                </td>
+            </tr>
+            <!-- Geen informatie door de spreiding van de cel hierboven-->
+            <tr>
+                <th>
+                   13:00 - 15:00
+                </th>
+            </tr>
+            <!-- Normale rij met 1 cel verspreid over 3 cellen -->
+            <tr>
+                <th>
+                   15:00 - 17:00
+                </th>
+
+                <td colspan="3" id="mystery-artist">
+                    Mystery Artist
+                </td>
+            </tr>
+
+            <!-- Normale rij zonder spreiding -->
+            <tr>
+                <th>
+                   17:00 - 18:00
+                </th>
+
+                <td>
+                    Nicky Romero
+                </td>
+                <td>
+                    Electro House
+                </td>
+                <td>
+                    Mainstage
+                </td>
+            </tr>
+
+            <!-- Geen informatie door de spreiding van de cel hierboven-->
+            <tr>
+                <th>
+                   18:00 - 19:00
+                </th>
+
+                <td colspan="3" id="mystery-artist">
+                    Mystery Artist
+                </td>
+            </tr>
+
+            <!-- Verspreiding over 2 rijen van de cellen. -->
+            <tr>
+                <th>
+                   19:00 - 21:00
+                </th>
+
+                <td rowspan="2">
+                    Tiesto
+                </td>
+                <td rowspan="2">
+                    Dance
+                </td>
+                <td rowspan="2">
+                    Mainstage
+                </td>
+            </tr>
+            <!-- Geen informatie door de spreiding van de cel hierboven-->
+            <tr>
+                <th>
+                    21:00 - 23:15
+                 </th>
+            </tr>
+
+            <tr>
+                <th>
+                    23:15 - 1:00
+                </th>
+                <td>
+                    Martin Garrix
+                </td>
+                <td>
+                    Dance
+                </td>
+                <td>
+                    Mainstage
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+
+</html>

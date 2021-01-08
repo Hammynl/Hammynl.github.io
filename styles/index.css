@@ -62,15 +62,17 @@ header
     height: auto;
     margin-bottom: 200px;
 }
-#vak1 h1
+h1, p 
 {
-    font-size: 1.5em;
     width: 60%;
 }
-#vak1 p
+h1
+{
+    font-size: 1.5em;
+}
+p
 {
     font-size: 0.6em;
-    width: 60%;
 }
 #vak1 img
 {
@@ -82,7 +84,7 @@ header
     box-shadow: 0px 0px 10px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 900px), screen and (max-width: 900px) and (orientation: landscape) {
     /* Styling vakkenn */
     #vak1 
     {
@@ -90,7 +92,7 @@ header
         width: 80%;
         height: auto;
     }
-    #vak1 h1, #vak1 p 
+    h1, p 
     {
         width: 100%;
     }
@@ -108,8 +110,30 @@ header
         width: 90%;
     }
 }
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 600px), screen and (max-width: 600px) and (orientation: portrait)  {
+    #vak1 
+    {
+        padding: 30px;
+        width: 80%;
+        height: auto;
+    }
+    h1, p 
+    {
+        width: 100%;
+    }
+    #vak1 img 
+    {
+        position: relative;
+        margin-left: 20px;
+    }
+    #logo
+    {
+        width: 75%;
+    }
+    #slogan
+    {
+        width: 90%;
+    }
 }
 
 @media screen and (max-height: 500px) {

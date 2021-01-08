@@ -1,0 +1,45 @@
+/*
+Auteur: Lars van Teeffelen
+Aanmaakdatum: 11-12-2020
+
+Omschrijving: JavaScript bestand test
+*/
+
+body
+{
+    font-size: 30px;
+    font-family: Arial;
+    background-color: lightblue;
+    text-align: center;
+}
+img
+{
+    border: 8px blue dashed;
+}
+figcaption::after {
+    content: "De beste laptop op de wereld!";
+}
+@media screen and (max-width: 900px) {
+    body {
+        background-color: purple;
+    }
+    figcaption::after {
+        content: "De beste tablet op de wereld!";
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        background-color: orange;
+    }
+    figcaption::after {
+        content: "De beste smartphone op de wereld!";
+    }
+}
+@media screen and (max-width: 400px) {
+    body {
+        background-color: wheat;
+    }
+    figcaption::after {
+        content: "De coolste neusaap ooit!";
+    }
+}

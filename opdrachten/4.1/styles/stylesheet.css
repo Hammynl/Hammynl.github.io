@@ -1,0 +1,52 @@
+/*
+Auteur: Lars van Teeffelen
+Aanmaakdatum: 12-16-2020
+
+Omschrijving: Oefening Realiseren
+*/
+body
+{
+    font-family: Arial;
+    color: white;
+    background-color: gray;
+    text-align: center;
+}
+td, th
+{
+    width: 100px;
+}
+table, td, th
+{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+/* Styling titel */
+#programma
+{
+    background-color: black;
+}
+/* Styling subtitel */
+#dag
+{
+    background-color: gray;
+}
+/* Styling geen optreden cel */
+#geen-optreden
+{
+    background-color: red;
+}
+/* Styling mystery artist kopjes */
+#mystery-artist 
+{
+    background-color: rgb(138, 138, 16);
+}
+/* 
+    Eerste child van elke rij moet een blauwe kleur krijgen 
+    (De tijden van de tabellen) en de bovenste rij met id table headers.
+*/
+#table-headers, table tr>:first-child
+{
+    background-color: darkblue;
+}
+
+
