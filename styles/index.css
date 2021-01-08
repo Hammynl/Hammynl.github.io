@@ -62,15 +62,17 @@ header
     height: auto;
     margin-bottom: 200px;
 }
-#vak1 h1
+h1, p 
 {
-    font-size: 1.5em;
     width: 60%;
 }
-#vak1 p
+h1
+{
+    font-size: 1.5em;
+}
+p
 {
     font-size: 0.6em;
-    width: 60%;
 }
 #vak1 img
 {
@@ -90,7 +92,7 @@ header
         width: 80%;
         height: auto;
     }
-    #vak1 h1, #vak1 p 
+    h1, p 
     {
         width: 100%;
     }
@@ -115,7 +117,7 @@ header
         width: 80%;
         height: auto;
     }
-    #vak1 h1, #vak1 p 
+    h1, p 
     {
         width: 100%;
     }
