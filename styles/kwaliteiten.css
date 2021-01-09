@@ -4,7 +4,7 @@ Auteur: Lars van Teeffelen
 Aanmaakdatum: 12/02/2020
 Laatst bewerkt: 12/02/2020
 
-Omschrijving: CSS bestand voor de opleidingen pagina.
+Omschrijving: CSS bestand voor de navigatiebar
 */
 
 body
@@ -63,8 +63,8 @@ p
 }
 #vak1 img 
 {
-    height: 150px;
-    width: 300px;
+    height: 180px;
+    width: 340px;
 }
 
 

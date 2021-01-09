@@ -21,15 +21,17 @@ Omschrijving: Homepagina van Portfolio
     <!-- Viewport declareren -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS Stylesheet gelinkt -->
+    <link rel="icon" href="../images/portfolio.png">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/resultaten.css">
     <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/resultaten.js" defer></script>
 </head>
 
 <body>
     <!-- Header en Menubar van de homepagina -->
     <header>
-        
+
         <nav>
             <!-- Navigatiemenu als de grootte boven 900 pixels is-->
             <div id="regularMenu">
@@ -37,7 +39,7 @@ Omschrijving: Homepagina van Portfolio
                     <li><a href="../index.html">HOME</a></li>
                     <li><a href="opleidingen.html">OPLEIDINGEN</a></li>
                     <li><a href="werkervaring.html">ERVARING</a></li>
-                    <li><a href="hobby.html">HOBBY'S</a></li>
+                    <li><a href="kwaliteiten.html">KWALITEITEN</a></li>
                     <li><a href="resultaten.html">RESULTATEN</a></li>
                     <li><a href="curriculum.html">CURRICULUM</a></li>
                 </ul>
@@ -50,10 +52,20 @@ Omschrijving: Homepagina van Portfolio
         </nav>
     </header>
     <main>
-        <h1 style="text-align: center; font-size: 40px; 
-        font-family: Roboto; color: white; padding-top: 50vh;">
-            Nog geen inhoud...
-        </h1>
+        <article id="vak1">
+            <h1>Mijn Resultaten</h1>
+            <button id="resultbutton" onclick="fillTable(); hideButton()">Load Results</button>
+            <table>
+                <thead>
+                    <td>Modules</td>
+                    <td>Periode 1</td>
+                </thead>
+                <tbody id="body">
+                
+
+                </tbody>
+            </table>
+        </article>
     </main>
 
 

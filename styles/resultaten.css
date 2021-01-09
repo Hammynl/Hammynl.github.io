@@ -1,0 +1,84 @@
+/*
+
+Auteur: Lars van Teeffelen
+Aanmaakdatum: 12/02/2020
+Laatst bewerkt: 12/02/2020
+
+Omschrijving: CSS bestand voor de homepagina.
+*/
+
+body
+{
+    font-size: 24px;
+}
+header
+{
+    height: 200px;
+}
+
+/* 
+    Styling voor het grote vak in het midden
+*/
+#vak1
+{
+    padding: 50px;
+    position: relative;
+    margin: 0 auto;
+    background-color: white;
+    width: 70%;
+    box-shadow: 0px 0px 15px;
+    height: auto;
+    margin-bottom: 200px;
+    text-align: center;
+}
+h1, p 
+{
+    width: 100%;
+}
+h1
+{
+    font-size: 1.5em;
+}
+p
+{
+    font-size: 0.6em;
+}
+#vak1 img
+{
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    height: 400px;
+    width: 300px;
+    
+}
+
+table, td 
+{
+    font-size: 0.8em;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+@media screen and (max-width: 900px), screen and (max-width: 900px) and (orientation: landscape) {
+    /* Styling vakkenn */
+    #vak1 
+    {
+        padding: 30px;
+        width: 80%;
+        height: auto;
+    }
+    h1, p 
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px), screen and (max-width: 600px) and (orientation: portrait)  {
+    #vak1 
+    {
+        padding: 30px;
+        width: 80%;
+        height: auto;
+    }
+}

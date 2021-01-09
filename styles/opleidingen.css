@@ -7,15 +7,6 @@ Laatst bewerkt: 12/02/2020
 Omschrijving: CSS bestand voor de opleidingen pagina.
 */
 
-@keyframes startup {
-    0% {
-        
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 body
 {
     font-size: 24px;
@@ -44,6 +35,8 @@ h1, h2, p
 }
 h1
 {
+    text-align: center;
+    margin-bottom: 30px;
     font-size: 1.5em;
 }
 h2
@@ -58,22 +51,23 @@ p
 {
     font-size: 0.6em;
 }
-
 #vak1 div
 {
     float: left;
     width: 50%;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 #vak1 div > p
 {
     width: 90%;
 }
-#opdrachten-fotos
+#vak1 img 
 {
+    border: 2px solid black;
     height: 180px;
     width: 340px;
 }
+
 
 
 
@@ -90,15 +84,6 @@ p
     {
         width: 100%;
     }
-
-    #logo
-    {
-        width: 75%;
-    }
-    #slogan
-    {
-        width: 90%;
-    }
 }
 @media screen and (max-width: 600px), screen and (max-width: 600px) and (orientation: portrait)  {
     #vak1 
@@ -106,18 +91,6 @@ p
         padding: 30px;
         width: 80%;
         height: auto;
-    }
-    h1, p 
-    {
-        width: 100%;
-    }
-    #logo
-    {
-        width: 75%;
-    }
-    #slogan
-    {
-        width: 90%;
     }
 }
 

@@ -81,7 +81,7 @@ p
     right: 3%;
     height: 400px;
     width: 300px;
-    box-shadow: 0px 0px 10px;
+    
 }
 
 @media screen and (max-width: 900px), screen and (max-width: 900px) and (orientation: landscape) {
@@ -120,19 +120,6 @@ p
     h1, p 
     {
         width: 100%;
-    }
-    #vak1 img 
-    {
-        position: relative;
-        margin-left: 20px;
-    }
-    #logo
-    {
-        width: 75%;
-    }
-    #slogan
-    {
-        width: 90%;
     }
 }
 

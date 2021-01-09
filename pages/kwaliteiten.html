@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- 
+
+Auteur: Lars van Teeffelen
+Aanmaakdatum: 12/02/2020
+Laatst bewerkt: 12/02/2020
+
+Omschrijving: Homepagina van Portfolio
+
+-->
+
+<html>
+
+<head>
+    <!-- Opgeven van een title -->
+    <title>
+        Lars - Kwaliteiten
+    </title>
+    <!-- Tekenset declareren -->
+    <meta charset="utf-8">
+    <!-- Viewport declareren -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Stylesheet gelinkt -->
+    <link rel="icon" href="../images/portfolio.png">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/kwaliteiten.css">
+    <script src="../scripts/navbar.js" defer></script>
+</head>
+
+<body>
+    <!-- Header en Menubar van de homepagina -->
+    <header>
+        
+        <nav>
+            <!-- Navigatiemenu als de grootte boven 900 pixels is-->
+            <div id="regularMenu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="opleidingen.html">OPLEIDINGEN</a></li>
+                    <li><a href="werkervaring.html">ERVARING</a></li>
+                    <li><a href="kwaliteiten.html">KWALITEITEN</a></li>
+                    <li><a href="resultaten.html">RESULTATEN</a></li>
+                    <li><a href="curriculum.html">CURRICULUM</a></li>
+                </ul>
+            </div>
+            <div id="burgerLogo" onclick="openBurgerMenu()">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article id="vak1">
+            <h1>Hobby's en bijzondere kwaliteiten</h1>
+
+            <!--    Hobby 1 van de 4 -->
+            <div>
+                <img src="../images/gamen.png" alt="">
+                <h2>Gamen</h2>
+                <p>
+                   Gamen doe ik ook graag, Ik speel veel actiespellen en strategische spellen met vrienden in nederland maar ook wereldwijd.
+                   Van mensen uit Canada tot aan Rusland. Ik praat in het engels met ze en heb altijd plezier. 
+                   Omdat ik veel engels praat kan ik het inmiddels ook bijna vloeiend spreken!
+
+                </p>
+            </div>
+            <!--    Hobby 2 van de 4 -->
+            <div>
+                <img src="../images/webdevelopment.png" alt="">
+                <h2>Website Development</h2>
+                <p>
+                   Website development doe ik graag. Ik was eerst onbekend met websites maar langzaamaan begon ik het meer te begrijpen
+                   en ook steeds leuker te vinden. Ik probeer ook wel eens dingen met externe frameworks zoals Bootstrap in mijn vrije tijd.
+                </p>
+            </div>
+            <!--    Hobby 3 van de 4 -->
+            <div>
+                <img src="../images/programmeren.png" alt="">
+                <h2>Plugin Development</h2>
+                <p>
+                    Mijn programmeercarriere begon bij het maken van Plugins voor het spel <a href="https://minecraft.net/" target="_blank">Minecraft</a>. 
+                    Ik heb met behulp van het modding platform <a href="https://spigotmc.org/" target="_blank">SpigotMC</a> vele plugins voor servereigenaren gebouwd en gepubliceerd. Ik ben zeer trots op mijn resultaten,
+                    omdat servereigenaren mijn software fijn en makkelijk vonden.
+                    De statistieken van mijn meest gebruikte plugin zijn <a href="https://bstats.org/plugin/bukkit/HammyRestart/4638" target="_blank">hier</a> te vinden.
+                </p>
+            </div>
+            <!--    Hobby 4 van de 4 -->
+            <div>
+                <img src="../images/hardware.jpg" alt="">
+                <h2>Hardware Fan</h2>
+                <p>
+                    Ik vind het altijd superleuk om te kijken naar Hardware en Desktops. Ik bouw daarom ook graag computers zowel voor mezelf als voor vrienden.
+                    Ook kijk ik veel videos over de werking van hardware en ben ik vaak up to date met de laatste architecturen en producten van hardwaremakers.
+                </p>
+            </div>
+
+            <!-- Deze onzichtbare punt staat hier zodat de lengte goed is. -->
+            <p style="color:white">.</p>
+        </article>
+    </main>
+
+</body>
+
+</html>
