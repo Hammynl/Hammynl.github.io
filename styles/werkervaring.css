@@ -2,9 +2,9 @@
 
 Auteur: Lars van Teeffelen
 Aanmaakdatum: 12/02/2020
-Laatst bewerkt: 12/02/2020
+Laatst bewerkt: 1/10/2021
 
-Omschrijving: CSS bestand voor de opleidingen pagina.
+Omschrijving: CSS bestand voor de werkervaring pagina.
 */
 
 body
@@ -21,7 +21,6 @@ header
 #vak1
 {
     padding: 50px;
-    position: relative;
     margin: 0 auto;
     background-color: white;
     width: 70%;

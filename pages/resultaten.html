@@ -3,9 +3,9 @@
 
 Auteur: Lars van Teeffelen
 Aanmaakdatum: 12/02/2020
-Laatst bewerkt: 12/02/2020
+Laatst bewerkt: 1/10/2021
 
-Omschrijving: Homepagina van Portfolio
+Omschrijving: Resultaten pagina van portfolio
 
 -->
 
@@ -54,25 +54,26 @@ Omschrijving: Homepagina van Portfolio
     <main>
         <article id="vak1">
             <h1>Mijn Resultaten</h1>
-            <button id="resultbutton" onclick="fillTable(); hideButton()">Load Results</button>
+            <p>Klik op de knop Load Results voor de resultaten!</p>
+            
             <table>
                 <thead>
                     <td>Modules</td>
                     <td>Periode 1</td>
                 </thead>
                 <tbody id="body">
-                
+                    <td colspan="2" id="buttoncell"><button onclick="fillTable(); hideButton()">Load Results</button></td>
 
                 </tbody>
             </table>
         </article>
     </main>
 
-
     <footer>
-
+        &copy; Lars van Teeffelen 
+        <a href="https://github.com/Hammynl" target="_blank"><img src="../images/github.png"></a>
+        <a href="https://www.instagram.com/larssvt/" target="_blank"><img src="../images/instagram.png"></a>
     </footer>
-
 </body>
 
 </html>

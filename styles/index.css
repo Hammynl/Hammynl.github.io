@@ -2,7 +2,7 @@
 
 Auteur: Lars van Teeffelen
 Aanmaakdatum: 12/02/2020
-Laatst bewerkt: 12/02/2020
+Laatst bewerkt: 1/10/2021
 
 Omschrijving: CSS bestand voor de homepagina.
 */
@@ -53,8 +53,8 @@ header
 */
 #vak1
 {
-    padding: 50px;
     position: relative;
+    padding: 50px;
     margin: 0 auto;
     background-color: white;
     width: 70%;

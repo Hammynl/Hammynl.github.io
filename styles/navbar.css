@@ -2,7 +2,7 @@
 
 Auteur: Lars van Teeffelen
 Aanmaakdatum: 12/02/2020
-Laatst bewerkt: 12/02/2020
+Laatst bewerkt: 1/10/2021
 
 Omschrijving: CSS bestand voor de navigatiebar
 */
@@ -73,6 +73,7 @@ body, html, ul, h1
     border-bottom: 2px solid white;
 }
 
+
 /* Standaard word het hamburgermenu niet weergegeven. */
 #burgerLogo
 {
@@ -93,6 +94,24 @@ body, html, ul, h1
     height: 5px;
     margin: 5px;
     background-color: white;
+}
+footer
+{
+    font-family: Poppins;
+    padding: 5px 0 5px 20px;
+    box-shadow: 0 0 15px black;
+    width: calc(100% - 20px);
+    background-color: rgb(115, 204, 255);
+    position: fixed;
+    bottom: 0;
+    font-size: 0.8em;
+}
+footer img 
+{
+    float: right;
+    padding-right: 10px;
+    width: 30px;
+    height: 30px;
 }
 
 /* Styling voor als het menu boven de 900px zit */

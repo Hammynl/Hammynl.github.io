@@ -2,7 +2,7 @@
 
 Auteur: Lars van Teeffelen
 Aanmaakdatum: 12/02/2020
-Laatst bewerkt: 12/02/2020
+Laatst bewerkt: 1/10/2021
 
 Omschrijving: CSS bestand voor de opleidingen pagina.
 */
@@ -21,7 +21,6 @@ header
 #vak1
 {
     padding: 50px;
-    position: relative;
     margin: 0 auto;
     background-color: white;
     width: 70%;
@@ -57,6 +56,7 @@ p
     width: 50%;
     margin-bottom: 150px;
 }
+/* Twee selectoren voor de criteria van realiseren */
 #vak1 div > p
 {
     width: 90%;
@@ -68,7 +68,39 @@ p
     width: 340px;
 }
 
-
+#popup
+{
+    display: none;
+    box-shadow: 0 0 15px black;
+    border-radius: 32px;
+    position: fixed;
+    left: 5%;
+    top: 10%;
+    background-color: gray;
+    width: 90%;
+    height: 80%;
+}
+iframe
+{
+    display: none;
+    position: fixed;
+    left: 15%;
+    top: 15%;
+    height: 70%;
+    width: 70%;
+}
+#popup span
+{
+    font-size: 1.5em;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    color: white;
+}
+#popup span:hover
+{
+    cursor: pointer;
+}
 
 
 
@@ -78,7 +110,6 @@ p
     {
         padding: 30px;
         width: 80%;
-        height: auto;
     }
     #vak1 div
     {
@@ -90,13 +121,5 @@ p
     {
         padding: 30px;
         width: 80%;
-        height: auto;
-    }
-}
-
-@media screen and (max-height: 500px) {
-    #slogan
-    {
-        display: none;
     }
 }

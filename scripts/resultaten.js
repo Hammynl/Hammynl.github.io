@@ -1,3 +1,12 @@
+/*
+
+Auteur: Lars van Teeffelen
+Aanmaakdatum: 12/02/2020
+Laatst bewerkt: 1/10/2021
+
+Omschrijving: Javascript bestand voor het berekenen van de gemiddelden van cijfers en tonen van resultaten.
+*/
+
 // Array voor alle modules
 var modules = ["Plannen en Ontwerpen", "Realiseren", "Testen en Verbeteren", "Computervaardigheden", "Burgerschap", "Nederlands", "Engels", "Rekenen", "Beroepshouding"];
 
@@ -62,7 +71,7 @@ function fillTable() {
 }
 
 function hideButton() {
-    document.getElementById("resultbutton").style.display = "none";
+    document.getElementById("buttoncell").style.display = "none";
 }
 
 

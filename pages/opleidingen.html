@@ -3,9 +3,9 @@
 
 Auteur: Lars van Teeffelen
 Aanmaakdatum: 12/02/2020
-Laatst bewerkt: 12/02/2020
+Laatst bewerkt: 1/10/2021
 
-Omschrijving: Homepagina van Portfolio
+Omschrijving: Opleidingen pagina van portfolio
 
 -->
 
@@ -25,6 +25,7 @@ Omschrijving: Homepagina van Portfolio
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/opleidingen.css">
     <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/opleidingen.js" defer></script>
 
 </head>
 
@@ -114,10 +115,11 @@ Omschrijving: Homepagina van Portfolio
 
             <!-- 4 oefeningen waar ik trots op ben. -->
             <h2 id="spacer">Mijn 4 oefeningen waar ik trots op ben.</h2>
+            <h3>Klik op de plaatjes om de opdracht in een popup te zien!</h3>
 
             <!-- Oefening 1 van de 4 -->
             <div>
-                <a href="../opdrachten/3.4/index.html" target="_blank"><img src="../images/3_4.png" alt=""></a>
+                <img onclick="openPopup(1)" src="../images/3_4.png" alt="">
                 <h3>Periode 1 - Oefening 3.4</h3>
                 <p>
                     In deze opdracht was het de bedoeling om alles wat we geleerd hebben in CSS bij elkaar te gooien en
@@ -128,7 +130,7 @@ Omschrijving: Homepagina van Portfolio
 
             <!-- Oefening 2 van de 4 -->
             <div>
-                <a href="../opdrachten/2.2/index.html" target="_blank"><img src="../images/2_2.png" alt=""></a>
+                <img onclick="openPopup(2)" src="../images/2_2.png" alt="">
                 <h3>Periode 2 - Oefening 2.2</h3>
                 <p>
                     In deze opdracht moest ik een website namaken met een aantal dingen zoals een footer, menubar en
@@ -139,7 +141,7 @@ Omschrijving: Homepagina van Portfolio
 
             <!-- Oefening 3 van de 4 -->
             <div>
-                <a href="../opdrachten/3.1/index.html" target="_blank"><img src="../images/3_1.png" alt=""></a>
+                <img onclick="openPopup(3)" src="../images/3_1.png" alt="">
                 <h3>Periode 2 - Oefening 3.1</h3>
                 <p>
                     In deze opdracht moest ik voor het eerst een responsive site  maken. Dit vond ik lastig
@@ -150,7 +152,7 @@ Omschrijving: Homepagina van Portfolio
 
             <!-- Oefening 4 van de 4 -->
             <div>
-                <a href="../opdrachten/4.1/index.html" target="_blank"><img src="../images/4_1.png" alt=""></a>
+               <img onclick="openPopup(4)" src="../images/4_1.png" alt="">
                 <h3>Periode 2 - Oefening 4.1</h3>
                 <p>
                     In deze opdracht moest ik een tabel maken met een hoop verschillende nieuwe elementen.
@@ -158,12 +160,27 @@ Omschrijving: Homepagina van Portfolio
                     Uiteindelijk is het toch gelukt en heb ik een mooi resultaat neergezet.
                 </p>
             </div>
-
+            
             <!-- Deze onzichtbare punt staat hier zodat de lengte goed is. -->
             <p style="color:white">.</p>
         </article>
+
+        <section id="popup">
+            <span onclick="closePopup()">
+                &#10006;
+            </span>
+            <iframe id="frame1" src="../overige/opdrachten/3.4/index.html" sandbox=""></iframe>
+            <iframe id="frame2" src="../overige/opdrachten/2.2/index.html" sandbox=""></iframe>
+            <iframe id="frame3" src="../overige/opdrachten/3.1/index.html" sandbox=""></iframe>
+            <iframe id="frame4" src="../overige/opdrachten/4.1/index.html" sandbox=""></iframe>
+        </section>
     </main>
 
+    <footer>
+        &copy; Lars van Teeffelen 
+        <a href="https://github.com/Hammynl" target="_blank"><img src="../images/github.png"></a>
+        <a href="https://www.instagram.com/larssvt/" target="_blank"><img src="../images/instagram.png"></a>
+    </footer>
 </body>
 
 </html>

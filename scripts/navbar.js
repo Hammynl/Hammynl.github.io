@@ -1,8 +1,10 @@
 /*
-Auteur: Lars van Teeffelen
-Aanmaakdatum: 12-12-2020
 
-Omschrijving: Hamburgermenu 
+Auteur: Lars van Teeffelen
+Aanmaakdatum: 12/02/2020
+Laatst bewerkt: 1/10/2021
+
+Omschrijving: Javascript bestand voor de werking van het hamburgermenu
 */
 
 
