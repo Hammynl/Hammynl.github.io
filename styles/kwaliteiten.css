@@ -90,6 +90,10 @@ p
         width: 80%;
         height: auto;
     }
+    #vak1 div
+    {
+        width: 100%;
+    }
 }
 
 @media screen and (max-height: 500px) {

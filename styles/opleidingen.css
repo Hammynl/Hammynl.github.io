@@ -76,7 +76,7 @@ p
     position: fixed;
     left: 5%;
     top: 10%;
-    background-color: gray;
+    background-color: #73CCFF;
     width: 90%;
     height: 80%;
 }
@@ -121,5 +121,9 @@ iframe
     {
         padding: 30px;
         width: 80%;
+    }
+    #vak1 div
+    {
+        width: 100%;
     }
 }

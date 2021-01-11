@@ -81,4 +81,8 @@ table, td
         width: 80%;
         height: auto;
     }
+    h1, p 
+    {
+        width: 100%;
+    }
 }

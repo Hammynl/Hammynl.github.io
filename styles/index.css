@@ -121,6 +121,11 @@ p
     {
         width: 100%;
     }
+    #vak1 img 
+    {
+        position: relative;
+        margin-left: 20px;
+    }
 }
 
 @media screen and (max-height: 500px) {

@@ -101,7 +101,7 @@ footer
     padding: 5px 0 5px 20px;
     box-shadow: 0 0 15px black;
     width: calc(100% - 20px);
-    background-color: rgb(115, 204, 255);
+    background-color: #73CCFF;
     position: fixed;
     bottom: 0;
     font-size: 0.8em;

@@ -90,11 +90,8 @@ p
         width: 80%;
         height: auto;
     }
-}
-
-@media screen and (max-height: 500px) {
-    #slogan
+    #vak1 div
     {
-        display: none;
+        width: 100%;
     }
 }
