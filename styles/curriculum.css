@@ -29,7 +29,7 @@ header
     height: auto;
     margin-bottom: 200px;
 }
-h1, h2, p 
+h1, p 
 {
     width: 100%;
 }
@@ -38,14 +38,10 @@ h1
     text-align: center;
     font-size: 1.5em;
 }
-h2
-{
-    font-size: 1em;
-}
+
 p
 {
-    width: 90%;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 #vak1 img
 {
@@ -56,17 +52,14 @@ p
     width: 300px;
     
 }
-#vak1 div
+
+
+iframe
 {
-    float: left;
-    width: 50%;
-    margin-bottom: 50px;
-}
-table, td
-{
-    font-size: 0.9em;
-    border: 2px solid black;
-    border-collapse: collapse;
+   position: relative;
+   height: 1000px;
+   width: 80%;
+   left: 10%;
 }
 
 @media screen and (max-width: 900px), screen and (max-width: 900px) and (orientation: landscape) {
@@ -85,8 +78,19 @@ table, td
     {
         width: 100%;
     }
+    table
+    {
+        font-size: 0.6em;
+        width: 80%;
+    }
+    iframe
+    {
+        width: 90%;
+        left: 5%;
+    }
 
 }
+/* Styling staat dubbel, omdat niet alle apparaten met een retina display de bovenste query pakken */
 @media screen and (max-width: 600px), screen and (max-width: 600px) and (orientation: portrait)  {
     #vak1 
     {

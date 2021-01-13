@@ -95,6 +95,7 @@ body, html, ul, h1
     margin: 5px;
     background-color: white;
 }
+/* Styling globale footer */
 footer
 {
     font-family: Poppins;
@@ -126,7 +127,7 @@ footer img
         display: none;
     }
     /* Height van de ul word aangepast naar 120 omdat er max 
-    3 menuitems onder elkaar zitten (40px per item *3 = 120px) */
+    3 menuitems onder elkaar staan (40px per item *3 = 120px) */
     #regularMenu ul 
     {
         
@@ -134,8 +135,7 @@ footer img
         height: 120px;
         padding-top: 50px;
     }
-    /* Padding word weggehaald om het menu compacter te maken en breedte wordt
-    50% om het goed te laten zien voor landschapmodus*/
+    /* Padding en breedte weg om de menuitems goed te laten zien */
     #regularMenu ul li
     {
         padding-top: 0px;
@@ -145,8 +145,7 @@ footer img
 
 /* Styling voor als het menu onder de 600px zit  */
 @media screen and (max-width: 600px), screen and (max-width: 600px) and (orientation: portrait) {
-    /* Omdat alle 6 de items onder elkaar staan (40px per item *6 = 240px)
-    word de hoogte naar 240px verandert voor de kleuroverbrenging*/
+    /* 6 items van 40 px hoog 6*40 = 240px*/
     #regularMenu ul 
     {
         height: 240px;

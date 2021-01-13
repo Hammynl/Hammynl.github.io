@@ -32,7 +32,9 @@ header
 }
 h1, p 
 {
-    width: 100%;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
 }
 h1
 {
@@ -42,6 +44,7 @@ p
 {
     font-size: 0.6em;
 }
+
 #vak1 img
 {
     position: absolute;
@@ -54,11 +57,16 @@ p
 
 table, td
 {
-    
     font-size: 0.8em;
     text-align: center;
     border: 2px solid black;
     border-collapse: collapse;
+}
+table
+{
+    position: relative;
+    left: 25%;
+    width: 50%;
 }
 
 @media screen and (max-width: 900px), screen and (max-width: 900px) and (orientation: landscape) {
@@ -74,6 +82,7 @@ table, td
         width: 100%;
     }
 }
+/* Styling staat dubbel, omdat niet alle apparaten met een retina display de bovenste query pakken */
 @media screen and (max-width: 600px), screen and (max-width: 600px) and (orientation: portrait)  {
     #vak1 
     {

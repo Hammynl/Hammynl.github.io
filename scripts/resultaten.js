@@ -2,7 +2,7 @@
 
 Auteur: Lars van Teeffelen
 Aanmaakdatum: 12/02/2020
-Laatst bewerkt: 1/10/2021
+Laatst bewerkt: 1/12/2021
 
 Omschrijving: Javascript bestand voor het berekenen van de gemiddelden van cijfers en tonen van resultaten.
 */
@@ -27,13 +27,14 @@ var rek = [9.3, 9.3];
 function getAverage(array) {
     
     var total = 0;
-    for(i = 0; i < array.length; i++) {
+    for(i = 0; i < array.length; i++) 
+    {
         total += array[i];
     }
     var average = total / array.length;
     
     var fixedAverage = average.toFixed(1);
-
+    // Kijken of de gemiddelde hoger of lager is als 6, En daarop een waarde terugsturen.
     if(average >= 6.0) 
     {
         return  "Voldoende (" + fixedAverage + ")";

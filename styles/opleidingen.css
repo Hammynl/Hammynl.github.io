@@ -28,6 +28,7 @@ header
     height: auto;
     margin-bottom: 200px;
 }
+/* Styling teksten en koppen */
 h1, h2, p
 {
     width: 100%;
@@ -50,13 +51,13 @@ p
 {
     font-size: 0.6em;
 }
+/* Styling vakken in het midden */
 #vak1 div
 {
     float: left;
     width: 50%;
     margin-bottom: 150px;
 }
-/* Twee selectoren voor de criteria van realiseren */
 #vak1 div > p
 {
     width: 90%;
@@ -67,7 +68,7 @@ p
     height: 180px;
     width: 340px;
 }
-
+/* Styling popups voor de opdrachten */
 #popup
 {
     display: none;
@@ -116,6 +117,7 @@ iframe
         width: 100%;
     }
 }
+/* Styling staat dubbel, omdat niet alle apparaten met een retina display de bovenste query pakken */
 @media screen and (max-width: 600px), screen and (max-width: 600px) and (orientation: portrait)  {
     #vak1 
     {
