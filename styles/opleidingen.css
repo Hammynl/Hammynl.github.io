@@ -64,9 +64,15 @@ p
 }
 #vak1 img 
 {
+    cursor: pointer;
     border: 2px solid black;
     height: 180px;
     width: 340px;
+}
+#vak1 img:hover
+{
+    opacity: 0.8;
+    box-shadow: 0 0 15px black;
 }
 /* Styling popups voor de opdrachten */
 #popup
