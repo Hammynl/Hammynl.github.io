@@ -84,6 +84,10 @@ table
 }
 /* Styling staat dubbel, omdat niet alle apparaten met een retina display de bovenste query pakken */
 @media screen and (max-width: 600px), screen and (max-width: 600px) and (orientation: portrait)  {
+    table
+    {
+        font-size: 0.6em;
+    }
     #vak1 
     {
         padding: 30px;
