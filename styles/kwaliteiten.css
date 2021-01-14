@@ -28,7 +28,7 @@ header
     height: auto;
     margin-bottom: 200px;
 }
-/* Styling teksten en koppen */
+/* Styling tekst */
 h1, h2, p
 {
     width: 100%;
@@ -51,7 +51,8 @@ p
 {
     font-size: 0.6em;
 }
-/* Styling vakken in het midden */
+
+/* Delen van vakken inrichten */
 #vak1 div
 {
     float: left;
